@@ -1,0 +1,234 @@
+thead, tfoot {
+    color: #848CA1;
+}
+
+thead th, tfoot th, tfoot td {
+    background: #F9F9FE;
+    border: none;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr, td {
+    border: none;
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+.table>tbody>tr:nth-child(1)>th, .table>tbody>tr:nth-child(1)>td {
+    border-top: none;
+}
+
+.table>thead:first-child>tr:first-child>th:first-child {
+    border-radius: 5px 0px 0px 0px;
+}
+
+.table>thead:first-child>tr:first-child>th:last-child {
+    border-radius: 0px 5px 0px 0px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    line-height: 3;
+    padding-left: 20px;
+    font-weight: normal;
+}
+
+.table>tbody>tr>th, .table>tbody>tr>td {
+    border-top: 1px solid #F1F1F1;
+    color: #8C8C8C;
+}
+
+body {
+    background: #f9f9fe;
+}
+
+.actions, .invoices {
+    background: #fff;
+}
+
+.main .name p, .addon .name p {
+    margin-bottom: 0px;
+    color: #6A798E;
+}
+
+.main .name, .addon .name {
+    margin-top: 15px;
+    padding: 8px;
+    padding-left: 15px;
+    border: none;
+    border-left: 5px solid #ECECF5;
+}
+
+.main > div, .addon > div {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #EBEBEB;
+}
+
+.main p, .addon p {
+    font-weight: bold;
+    color: #252425;
+}
+
+.content-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    border: 1px solid #ebebeb;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    border: 1px solid #ebebeb;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type=date]::-webkit-datetime-edit {
+    color: #777676;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: none; 
+}
+
+.form input[type="submit"] {
+    margin-right: 0px;
+    display: block;
+    width: auto;
+    margin-left: auto;
+}
+
+.btn-primary {
+    background: #4C76FF;
+}
+
+.btn {
+    padding: 6px 20px;
+    border-radius: 5px;
+}
+
+.item {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+input[disabled] {
+    background: #fff;
+}
+
+.item input {
+    width: 500px;
+}
+
+@media(max-width: 500px) {
+    .item input {
+        width: 100%;
+    }
+}
+
+.item-full {
+    width: 100%;
+}
+
+.form {
+    background: #fff;
+    padding: 15px;
+}
+.content-form textarea {
+    width: 100%;
+    min-width: 300px;
+    min-height: 100px;
+}
+
+/* 
+.header .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header .container:after, .header .container:before {
+    display: none;
+} */
+
+body {
+    font-size: 14px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 15px;
+}
+
+.top-right a:nth-child(1) {
+    margin-right: 30px;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.admin {
+    display: flex!important;
+    flex-basis: auto;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.header .container:before, .header .container:after {
+    display: none;
+}
+
+.btn-edit {
+    background-image: url(../img/edit.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-delete {
+    background-image: url(../img/delete.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width: 600px) {
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+    .item {
+        margin-right: 0px;
+        width: 100%;
+    }
+}
