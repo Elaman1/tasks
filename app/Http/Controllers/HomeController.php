@@ -36,7 +36,8 @@ class HomeController extends Controller
     }
 
     public function form() {
-        $counts = count(Invoices::all()) + 1;
+        //$counts = count(Invoices::all()) + 1;
+        $counts = Invoices::latest()->first()->id + 1;
         $count = str_pad($counts, 5, 0, STR_PAD_LEFT);
 
         return view('invoice', compact('count'));
@@ -48,7 +49,7 @@ class HomeController extends Controller
 
     public function add(Request $request) {
         $count = 'INV-';
-        $counts = count(Invoices::all()) + 1;
+        $counts = Invoices::latest()->first()->id + 1;
         $count .= str_pad($counts, 5, 0, STR_PAD_LEFT);
 
 
